@@ -58,4 +58,11 @@ public void TakeDamage(CharacterStats attacker) {
 }
 ```
 
-
+#### 💾 存档系统
+```csharp
+// SaveManager.cs
+public void SavePlayerData() {
+    string jsonData = JsonUtility.ToJson(GameManager.Instance.playerStats);
+    PlayerPrefs.SetString("PlayerData", jsonData); // AES加密扩展接口
+}
+```
