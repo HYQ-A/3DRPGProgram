@@ -43,6 +43,8 @@ void SwitchStates() {
         GetNewWayPoint(); // NavMesh.SamplePosition优化路径点
     }
 }
+```
+
 
 #### 🔥 技能伤害计算
 ```csharp
@@ -54,3 +56,6 @@ public void TakeDamage(CharacterStats attacker) {
     );
     UpdateHealthBar?.Invoke(CurrentHealth, MaxHealth);
 }
+```
+
+
